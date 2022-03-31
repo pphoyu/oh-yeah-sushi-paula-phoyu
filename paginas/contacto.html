@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OHyeahsushi!</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor__sticky">
+        <h3>TIENDA DE SUSHI 寿司屋</h3>
+      </div>
+      <div class="contenedor__logo">
+        <img src="../imagenes/Logo1.jpeg" alt="logo" class="logo"> 
+      </div>
+      <nav class="navegacion">
+        <ul class="menu">
+          <li><a href="../paginas/inicio.html">HOME</a></li>
+          <li><a href="../paginas/carta.html">CARTA</a></li>
+          <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
+          <li>
+            <a href="#">SERVICIOS</a>
+            <ul class="submenu">
+              <li>
+                <a href="../paginas/servicio.html">Servicio 1</a>
+              </li>
+              <li>
+                <a href="../paginas/servicio.html">Servicio 2</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p> 
+          <h4>Desde OH YEAH SUSHI agradecemos por ponerte en contacto, 
+            te vamos a pedir algunos datos que nos parezcan relevantes
+            para avanzar en el proceso de seleccion de nuestros franquiciados .
+            Muchas gracias.
+          </h4>
+        </p>
+      <form class="formulario">
+        <br>
+        <label for="nombre">Datos personales</label>
+        <br>
+        <input type="text" placeholder="Nombre y Apellido" value="" class="datos"> 
+        <br>
+        <input type="text" placeholder="Telefono" value=""class="datos">
+        <br>
+        <input type="mail" placeholder="Mail" value=""class="datos">
+        <br>
+        <p>Contanos mas de vos</p>
+        <fieldset class="datos">
+          <label for="Ciudad">En que ciudad propones abrir tu franquicia?</label>
+          <select name="ciudad">
+            <option value="CBA">Cordoba</option>
+            <option value="VCP">Villa Carlos Paz</option>
+            <option value="VM">Villa Maria</option>
+          </select>
+        </fieldset>
+        <br>
+        <fieldset class="datos">
+          <label for="Dispones de local">Dispones de local?</label>
+          <input type="radio" name="local" value="si"> Si
+          <input type="radio" name="local" value="no"> No
+        </fieldset>
+        <br>
+        <fieldset class="datos">
+          <p>En este emprendimiento, en que situacion estas?</p>
+          <input type="checkbox" name="situacion" value="1"  > Realizare la inversion por mi cuenta
+          <br>
+          <input type="checkbox" name="situacion" value="2" > Realizare la inversion con mi socio
+          <br>
+          <input type="checkbox" name="situacion" value="3"> Otra situacion
+        </fieldset>
+        <br>
+        <legend>Comentarios</legend>
+          <textarea  name=" id=" cols="45" rows="3" placeholder="Comente porque te gustaria tener tu propia franquicia?" class="datos"></textarea>
+          <br>
+        <input type="submit" class="btn" value="Enviar formulario"/>
+        <input type="submit"  class="btn" value="Limpiar formulario"/>      
+      </form>
+    </main>
+    <footer id="footer">
+      <div class="redes__sociales">
+        <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>
+        <a href="https://www.facebook.com/ohyeahsushi/">Facebook</a>
+      </div>
+      <div class="tarjetas__credito">
+        <img src="../imagenes/logo-visa6.png" alt="logo-visa" >
+        <img src="../imagenes/logo-master2.jpg" alt="logo-master">
+      </div>
+    </footer>
+  </body>
+</html>
