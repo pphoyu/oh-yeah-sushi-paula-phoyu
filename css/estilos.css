@@ -34,6 +34,7 @@ h1 {
 .contenedor__logo {
 	background-color: #f7d40f;
 	padding: 0.5rem;
+	grid-area: logo;
 }
 .logo {
 	height:6.188rem;
@@ -175,7 +176,8 @@ form {
 	border-radius: 15%;
 }
 .img__quienes:hover {
-	-webkit-border-radius:25%;
+	-webkit-border-radius: 25%;
+	border-radius: 25%;
 	box-shadow: 0px 0px 15px 15px #f7d40f;
 	-webkit-box-shadow: 0px 0px 15px 15px #f7d40f;
 }
@@ -186,7 +188,8 @@ form {
 	border-radius: 15%;
 }
 .img__nuestros:hover {
-	-webkit-border-radius:25%;
+	-webkit-border-radius: 25%;
+	border-radius: 25%;
 	box-shadow: 0px 0px 15px 15px #f7d40f;
 	-webkit-box-shadow: 0px 0px 15px 15px #f7d40f;
 }
@@ -224,9 +227,11 @@ form {
 }
 
 /* Main Carta */
-
-.card{
+.container-fluid{
 	background-color: black;
+}
+.card {
+	padding: 1.5rem;
 }
 .contenedor__img__menu {
 	text-align: center;
@@ -247,19 +252,17 @@ form {
 	text-align: center;
 }
 .entradas__menu {
-	padding-bottom: 1rem;
 	border-bottom: 1px solid #f7d40f;
 	color: #f7d40f;
 	background-color: black;
 }
-h5{
+h5 {
 	color: #f7d40f;
 }
 .btn__btn__langostinos {
 	color: #f7d40f;
 }
 .gohan__menu {
-	padding-bottom: 1rem;
 	border-bottom: 1px solid #f7d40f;
 	color: #f7d40f;
 	background-color: black;
@@ -268,7 +271,6 @@ h5{
 	width: 220px;
 }
 .combos__menu {
-	padding-bottom: 1rem;
 	border-bottom: 1px solid #f7d40f;
 	color: #f7d40f;
 	background-color: black;
@@ -277,7 +279,6 @@ h5{
 	width: 220px;
 }
 .rolls__menu {
-	padding-bottom: 1rem;
 	border-bottom: 1px solid #f7d40f;
 	color: #f7d40f;
 	background-color: black;
@@ -285,20 +286,21 @@ h5{
 .rolls__menu__rolls {
 	width: 220px;
 }
-/*table {
-	table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid black;
-  text-align: center;
-  background-color: #f7d40f;
-}*/
-/*.tabla__menu {
-	margin: 10px 0px 10px 0px;
-}*/
-/*.contenido__carta {
-	padding: 1rem;
-}*/
+
+.contenido__carta h3 {
+	text-align: center;
+}
+
+/* chequear tamanos */
+.card img {
+	height: 10rem;
+	width: 10rem;
+}
+
+.glyphicon {
+	position: static !important;
+}
+
 /* Main contacto */
 
 /* Footer */
@@ -306,7 +308,6 @@ h5{
 #footer {
 	text-align: center;
 	background-color: black;
-	height: 2rem;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 1fr ;
