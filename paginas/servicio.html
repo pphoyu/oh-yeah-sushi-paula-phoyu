@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OHyeahsushi!</title>
+    <link rel="stylesheet" href="..css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="..js/bootstrap.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -17,7 +19,7 @@
       </div>
       <nav class="navegacion">
         <ul class="menu">
-          <li><a href="../paginas/inicio.html">HOME</a></li>
+          <li><a href="../index.html">HOME</a></li>
           <li><a href="../paginas/carta.html">CARTA</a></li>
           <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
           <li>
@@ -35,6 +37,34 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div id="carouseldeservicio" class="carousel row" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/entrada4.webp" class="imgcarousel1" alt="imgcarousel1">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/veggie1.jpg" class="imgcarousel2" alt="imgcarousel2"
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/gohan.jpg" class="imgcarousel3" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
     <footer id="footer">
       <div class="redes__sociales">
         <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>

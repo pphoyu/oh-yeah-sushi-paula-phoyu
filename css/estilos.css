@@ -148,7 +148,7 @@ form {
 
 .contenido {
 	background-color: black;
-	padding: 2rem;
+	padding: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr ;
 	grid-template-rows: 1fr 1fr 1fr ;
@@ -225,6 +225,9 @@ form {
 
 /* Main Carta */
 
+.card{
+	background-color: black;
+}
 .contenedor__img__menu {
 	text-align: center;
 	background-color: black;
@@ -235,10 +238,13 @@ form {
 	background-color: black;
 }
 .contenido__carta {
-	max-width: 1200px;
 	margin: 0%;
 	padding: 0rem;
 	background-color: black;
+}
+.card-group{
+	color: #f7d40f;
+	text-align: center;
 }
 .entradas__menu {
 	padding-bottom: 1rem;
@@ -246,8 +252,11 @@ form {
 	color: #f7d40f;
 	background-color: black;
 }
-.niguiri__entrada {
-	width: 220px;
+h5{
+	color: #f7d40f;
+}
+.btn__btn__langostinos {
+	color: #f7d40f;
 }
 .gohan__menu {
 	padding-bottom: 1rem;
@@ -336,7 +345,7 @@ form {
 	}
   .logo {
 		animation-name: moverlogomobile;
-		animation-duration: 3s;
+		animation-duration: 5s;
 	}
 	.contenido {
 		grid-template-columns: 1fr;
@@ -348,6 +357,14 @@ form {
 		"img-nuetros" 
 		"img1"
 		"img2";
+	}
+	.img__quienes {
+		height: 330px;
+		width: 298px;
+	}
+	.img__nuestros {
+		height: 330px;
+		width: 298px;
 	}
 	.img__1 {
 		height: 330px;
@@ -402,13 +419,13 @@ form {
 }
 
 /* MEDIA QUERY TABLET */
-@media screen and (max-width: 756px) {
+/* @media screen and (max-width: 756px) {
   .logo {
 		animation-name: moverlogotablet;
 		animation-duration: 6s;
 	}
 
-}
+}*/
 @keyframes moverlogotablet {
 	0% {
 		transform: translateX(-10px);	

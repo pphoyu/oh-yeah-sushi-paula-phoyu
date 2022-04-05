@@ -5,118 +5,344 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OHyeahsushi!</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-  </head>
+    <script src="..js/bootstrap.min.js"></script>
   <body>
-    <header class="header">
-      <div class="contenedor__sticky">
-        <h3>TIENDA DE SUSHI 寿司屋</h3>
-      </div>
-      <div class="contenedor__logo">
-        <img src="../imagenes/Logo1.jpeg" alt="logo" class="logo"> 
-      </div>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="../paginas/inicio.html">HOME</a></li>
-          <li><a href="../paginas/carta.html">CARTA</a></li>
-          <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
-          <li>
-            <a href="#">SERVICIOS</a>
-            <ul class="submenu">
-              <li>
-                <a href="../paginas/servicio.html">Servicio 1</a>
-              </li>
-              <li>
-                <a href="../paginas/servicio.html">Servicio 2</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <div class="contenedor__img__menu">
-          <img class="img__menu" src="../imagenes/sushi1.jpeg" alt="imag1">
-        </div>        
-        <div class="contenido__carta">
-          <div class="entradas__menu">
-            <h3>Entradas</h3>
-          </div>
-          <div>
-            <img src="../imagenes/entrada3.jpg" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/entrada6.jpeg" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/entrada1.jpg" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/entrada5.jpg" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div class="gohan__menu">
-            <h3>Gohan</h3>
-          </div>
-          <div>
-            <img src="../imagenes/gohan.jpg" alt="gohan1" class="gohan__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/gohan.jpg" alt="gohan1" class="gohan__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/gohan.jpg" alt="gohan1" class="gohan__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/gohan.jpg" alt="gohan1" class="gohan__menu__salmon">
-          </div>
-          <div class="combos__menu">
-              <h3>Combos</h3>
-          </div>
-          <div>
-            <img src="../imagenes/combinadosushi2.jpg" alt="combinados1" class="combinados__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/combinadosushi1.jpg" alt="combinados1" class="combinados__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/combinadosushi3.jpg" alt="combinados1" class="combinados__menu__salmon">
-          </div>
-          <div>
-            <img src="../imagenes/feel.jpg" alt="combinados1" class="combinados__menu__salmon">
-          </div>
-          <div class="rolls__menu">
-            <h3>Nuestros Rolls mas pedidos</h3>
-          </div>
-          <div>
-            <img src="../imagenes/honey2.png" alt="niguiri1" class="rolls__menu__rolls">
-          </div>
-          <div>
-            <img src="../imagenes/rebozadosushi.png" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/rosesushi.png" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/TopRoll.png" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/terisushi.png" alt="niguiri1" class="niguiri__entrada">
-          </div>
-          <div>
-            <img src="../imagenes/paltasushi.png" alt="niguiri1" class="niguiri__entrada">
+      <header class="header">
+        <div class="contenedor__sticky">
+          <h3>TIENDA DE SUSHI 寿司屋</h3>
           </div>
         </div>
-    </main>
-    <footer id="footer" class="footer">
-      <div class="redes__sociales">
-        <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>
-        <a href="https://www.facebook.com/ohyeahsushi/">Facebook</a>
+        <div class="contenedor__logo">
+          <img src="../imagenes/Logo1.jpeg" alt="logo" class="logo"> 
+        </div>
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../paginas/carta.html">CARTA</a></li>
+            <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
+            <li>
+              <a href="#">SERVICIOS</a>
+              <ul class="submenu">
+                <li>
+                  <a href="../paginas/servicio.html">Servicio 1</a>
+                </li>
+                <li>
+                  <a href="../paginas/servicio.html">Servicio 2</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container-fluid">
+        <main class="row">
+          <div class="contenedor__img__menu">
+            <img class="img__menu" src="../imagenes/sushi1.jpeg" alt="imag1">
+          </div>        
+          <div class="contenido__carta">
+            <div class="entradas__menu">
+              <h3>Entradas</h3>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <img src="../imagenes/entrada1.jpg" class="niguiri__entrada" alt="niguiri1">
+                <div class="card-body">
+                  <h5 class="card-title">Langostinos</h5>
+                  <p class="card-text">langostinos rebozados y salsa</p>
+                  <p class="card-text"><small class="text-muted">$200</small></p>
+                  <button type="button" 
+                  class="btn btn-default btn-sm">
+                    <span class="glyphicon 
+                      glyphicon-shopping-cart">
+                    </span>
+                  <b> Agregar al carrito </b>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../imagenes/entrada6.jpeg" alt="niguiri1" class="niguiri__entrada">
+                <div class="card-body">
+                  <h5 class="card-title">Arrollado primavera</h5>
+                  <p class="card-text">cerdo y verduras X 3 UNIDADES.</p>
+                  <p class="card-text"><small class="text-muted">$150</small></p>
+                  <button type="button" 
+                  class="btn btn-default btn-sm">
+                    <span class="glyphicon 
+                      glyphicon-shopping-cart">
+                    </span>
+                  <b> Agregar al carrito </b>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../imagenes/entrada5.jpg" alt="niguiri1" class="niguiri__entrada">
+                <div class="card-body">
+                  <h5 class="card-title">Ceviche</h5>
+                  <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                  <p class="card-text"><small class="text-muted">$590</small></p>
+                  <button type="button" 
+                  class="btn btn-default btn-sm">
+                    <span class="glyphicon 
+                      glyphicon-shopping-cart">
+                    </span>
+                  <b> Agregar al carrito </b>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="contenido__carta">
+              <div class="gohan__menu">
+                <h3>Gohan y Wok</h3>
+              </div>
+              <div class="card-group">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="../imagenes/gohan.jpg" class="gohan__menu__salmon" alt="gohan1">
+                    <div class="card-body">
+                      <h5 class="card-title">Gohan Salmon y Langostino</h5>
+                      <p class="card-text">langostinos rebozados, Salmon</p>
+                      <p class="card-text"><small class="text-muted">$600</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/wok1.jpg" alt="gohan1" class="gohan__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">wok1</h5>
+                      <p class="card-text">cerdo y verduras.</p>
+                      <p class="card-text"><small class="text-muted">$850</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/wok2.jpg" alt="gohan1" class="gohan__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Ceviche</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/wok3.jpg" alt="gohan1" class="gohan__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Ceviche</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenido__carta">
+              <div class="combos__menu">
+                <h3>Combos</h3>
+              </div>
+              <div class="card-group">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="../imagenes/combinadosushi2.jpg" alt="combinados1" class="combinados__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Salmon y Langostino</h5>
+                      <p class="card-text">langostinos rebozados, Salmon</p>
+                      <p class="card-text"><small class="text-muted">$600</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/combinadosushi1.jpg" alt="combinados1" class="combinados__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Vegetariano</h5>
+                      <p class="card-text">cerdo y verduras.</p>
+                      <p class="card-text"><small class="text-muted">$850</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/combinadosushi3.jpg" alt="combinados1" class="combinados__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Variado</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/feel.jpg" alt="combinados1" class="combinados__menu__salmon">
+                    <div class="card-body">
+                      <h5 class="card-title">Solo Salmon</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenido__carta">
+              <div class="rolls__menu">
+                <h3>Nuestros Rolls mas pedidos</h3>
+              </div>
+              <div class="card-group">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="../imagenes/honey2.png" alt="niguiri1" class="rolls__menu__rolls">
+                    <div class="card-body">
+                      <h5 class="card-title">Salmon y Langostino</h5>
+                      <p class="card-text">langostinos rebozados, Salmon</p>
+                      <p class="card-text"><small class="text-muted">$600</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/rebozadosushi.png" alt="niguiri1" class="niguiri__entrada">
+                    <div class="card-body">
+                      <h5 class="card-title">Vegetariano</h5>
+                      <p class="card-text">cerdo y verduras.</p>
+                      <p class="card-text"><small class="text-muted">$850</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/rosesushi.png" alt="niguiri1" class="niguiri__entrada">
+                    <div class="card-body">
+                      <h5 class="card-title">Variado</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/TopRoll.png" alt="niguiri1" class="niguiri__entrada">
+                    <div class="card-body">
+                      <h5 class="card-title">Solo Salmon</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/terisushi.png" alt="niguiri1" class="niguiri__entrada">
+                    <div class="card-body">
+                      <h5 class="card-title">Solo Salmon</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../imagenes/paltasushi.png" alt="niguiri1" class="niguiri__entrada">
+                    <div class="card-body">
+                      <h5 class="card-title">Solo Salmon</h5>
+                      <p class="card-text">Pesca del dia, cebolla morada y cilantro</p>
+                      <p class="card-text"><small class="text-muted">$590</small></p>
+                      <button type="button" 
+                      class="btn btn-default btn-sm">
+                        <span class="glyphicon 
+                          glyphicon-shopping-cart">
+                        </span>
+                      <b> Agregar al carrito </b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main> 
       </div>
-      <div class="tarjetas__credito">
-        <img src="../imagenes/logo-visa6.png" alt="logo-visa" >
-        <img src="../imagenes/logo-master2.jpg" alt="logo-master">
-      </div>
-    </footer>
+      <footer id="footer" class="footer row">
+        <div class="redes__sociales">
+          <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>
+          <a href="https://www.facebook.com/ohyeahsushi/">Facebook</a>
+        </div>
+        <div class="tarjetas__credito">
+          <img src="../imagenes/logo-visa6.png" alt="logo-visa" >
+          <img src="../imagenes/logo-master2.jpg" alt="logo-master">
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
