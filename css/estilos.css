@@ -321,7 +321,16 @@ h5 {
 	position: static !important;
 }
 
-/* Main contacto */
+/* Main servicios */
+.carousel{
+	text-align: -webkit-center;
+}
+.carousel__slide {
+	width: 40rem;
+}
+.carousel-item {
+	data-bs-interval= "3s";
+}
 
 /* Footer */
 

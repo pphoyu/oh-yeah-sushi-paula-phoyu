@@ -5,57 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OHyeahsushi!</title>
-    <link rel="stylesheet" href="..css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="..js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="contenedor__sticky">
-        <h3>TIENDA DE SUSHI 寿司屋</h3>
+    <div class="container-fluid">
+      <header class="header row">
+        <div class="contenedor__sticky">
+          <h3>TIENDA DE SUSHI 寿司屋</h3>
+        </div>
+        <div class="contenedor__logo">
+          <img src="../imagenes/Logo1.jpeg" alt="logo" class="logo"> 
+        </div>
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../paginas/carta.html">CARTA</a></li>
+            <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
+            <li>
+              <a href="#">SERVICIOS</a>
+              <ul class="submenu">
+                <li>
+                  <a href="../paginas/servicio.html">Servicio 1</a>
+                </li>
+                <li>
+                  <a href="../paginas/servicio.html">Servicio 2</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="row">
+      <div class="card row" style="width: 18rem;">
+        <img src="../imagenes/wok1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div class="contenedor__logo">
-        <img src="../imagenes/Logo1.jpeg" alt="logo" class="logo"> 
-      </div>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../paginas/carta.html">CARTA</a></li>
-          <li><a href="../paginas/tienda.html">SUCURSALES</a></li>
-          <li>
-            <a href="#">SERVICIOS</a>
-            <ul class="submenu">
-              <li>
-                <a href="../paginas/servicio.html">Servicio 1</a>
-              </li>
-              <li>
-                <a href="../paginas/servicio.html">Servicio 2</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-    <div class="card row" style="width: 18rem;">
-      <img src="../imagenes/wok1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+      </main>
+      <footer id="footer" class="row">
+        <div class="redes__sociales">
+          <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>
+          <a href="https://www.facebook.com/ohyeahsushi/">Facebook</a>
+        </div>
+        <div class="tarjetas__credito">
+          <img src="../imagenes/logo-visa6.png" alt="logo-visa" >
+          <img src="../imagenes/logo-master2.jpg" alt="logo-master">
+        </div>
+      </footer>
     </div>
-    </main>
-    <footer id="footer">
-      <div class="redes__sociales">
-        <a href="https://www.instagram.com/ohyeahsushi/">Instagram</a>
-        <a href="https://www.facebook.com/ohyeahsushi/">Facebook</a>
-      </div>
-      <div class="tarjetas__credito">
-        <img src="../imagenes/logo-visa6.png" alt="logo-visa" >
-        <img src="../imagenes/logo-master2.jpg" alt="logo-master">
-      </div>
-    </footer>
   </body>
 </html>
