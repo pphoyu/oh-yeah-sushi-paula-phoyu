@@ -22,6 +22,7 @@ h1 {
 	"tienda tienda tienda"
 	"logo logo logo"
 	"menu menu menu"
+	
 }
 .contenedor__sticky {
 	grid-area: tienda;
@@ -30,6 +31,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 .contenedor__logo {
 	background-color: #f7d40f;
@@ -45,6 +47,7 @@ h1 {
 	animation-iteration-count: infinite;
 	grid-area: logo;
 	border-radius: 15%;
+	
 }
 @keyframes moverlogo {
 	0% {
