@@ -3,8 +3,8 @@
 	padding: 0;
 }
 html {
-	font-size: 62,5%;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 62,5% !important;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 h1 {
 	text-align: left;
@@ -133,20 +133,44 @@ h4 {
 	text-align: -webkit-center;
 	font-size: smaller;
 }
+
+/* CONTACTO */
 form {
-	padding: 60px;
-    max-width: 400px;
+	padding: 2rem;
     background-color: #E7E7E7;
     margin: 0 auto;
     text-align: -webkit-center;
 }
 .datos {
 	margin: 1%;
-	padding: revert;
+	padding: 1.5rem;
 	text-align: -webkit-match-parent;
 	border-block-color: revert;
 	background-color: #f7d40f;
 	color: slategrey;
+}
+.saludo__contacto {
+	padding: 2rem;
+	text-align: center;
+	color: white;
+}
+.botones__formulario {
+	margin-top: 1rem;
+}
+.opciones__situacion {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	justify-content: space-between;
+}
+.selector__ciudad {
+	margin-top: 1rem;
+}
+.boton__enviar:hover {
+	background-color: #50e62e;
+}
+.boton_limpiar:hover {
+	background-color: red;
 }
 
 /* Main Inicio */
@@ -299,7 +323,7 @@ h5 {
 	color: #f7d40f;
 	background-color: black;
 }
-.combinados__menu__salmon{
+.combinados__menu__salmon {
 	width: 220px;
 }
 .rolls__menu {
@@ -310,9 +334,11 @@ h5 {
 .rolls__menu__rolls {
 	width: 220px;
 }
-
 .contenido__carta h3 {
 	text-align: center;
+}
+.card-info {
+	margin-bottom: 1rem;
 }
 
 /* chequear tamanos de img */
@@ -330,10 +356,11 @@ h5 {
 	text-align: -webkit-center;
 }
 .carousel__slide {
-	width: 40rem;
+	width: 35rem;
 }
-.carousel-item {
-	data-bs-interval= "3s";
+.titulo__carousel__servicios {
+	color: white !important;
+	text-align: center;
 }
 /* Main tienda */
 .btn__pedidos {
