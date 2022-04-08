@@ -123,6 +123,7 @@ a {
 }
 p {
 	font-size: medium;
+	color: white;
 }
 h4 {
 	color: #f7d40f;
@@ -280,7 +281,7 @@ form {
 	background-color: black;
 }
 h5 {
-	color: #f7d40f;
+	color: #f7d40f !important;
 }
 .btn__btn__langostinos {
 	color: #f7d40f;
@@ -334,6 +335,17 @@ h5 {
 .carousel-item {
 	data-bs-interval= "3s";
 }
+/* Main tienda */
+.btn__pedidos {
+	background-color: black !important;
+	border-color: #f7d40f !important;
+}
+.nuestras__sucursales {
+	color: white;
+}
+.card-title .sucursal {
+	color: #f7d40f !important;
+} 
 
 /* Footer */
 
