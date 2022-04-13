@@ -1,0 +1,142 @@
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0rem;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tienda tienda tienda" "logo logo logo" "menu menu menu";
+}
+
+.contenedor__sticky {
+  grid-area: tienda;
+  background-color: black;
+  color: #f7d40f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor__logo {
+  background-color: #f7d40f;
+  padding: 0.5rem;
+  grid-area: logo;
+}
+
+.logo {
+  height: 6.188rem;
+  width: 7.813rem;
+  animation-name: moverlogo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  grid-area: logo;
+  border-radius: 15%;
+}
+
+@keyframes moverlogo {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  10% {
+    transform: translateX(120px);
+  }
+
+  20% {
+    transform: translateX(240px);
+  }
+
+  30% {
+    transform: translateX(360px);
+  }
+
+  40% {
+    transform: translateX(480px);
+  }
+
+  50% {
+    transform: translateX(600px);
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f;
+  }
+
+  60% {
+    transform: translateX(720px);
+  }
+
+  70% {
+    transform: translateX(840px);
+  }
+
+  80% {
+    transform: translateX(960px);
+  }
+
+  90% {
+    transform: translateX(1080px);
+  }
+
+  100% {
+    transform: translateX(2500px);
+  }
+}
+
+.navegacion {
+  grid-area: menu;
+  background-color: #f7d40f;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 550;
+    padding: 0.938rem;
+
+    a {
+      color: black;
+    }
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+
+  li {
+    display: block;
+    background-color: #f7d40f;
+  }
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+p {
+  font-size: medium;
+  color: white;
+}
+
+h4 {
+  color: #f7d40f;
+  background-color: black;
+  margin-top: 0rem;
+  padding: 3rem;
+  text-align: -webkit-center;
+  font-size: smaller;
+}

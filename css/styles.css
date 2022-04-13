@@ -1,0 +1,247 @@
+/* Header */
+.header {
+  position: sticky;
+  top: 0rem;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tienda tienda tienda" "logo logo logo" "menu menu menu"; }
+
+.contenedor__sticky {
+  grid-area: tienda;
+  background-color: black;
+  color: #f7d40f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor__logo {
+  background-color: #f7d40f;
+  padding: 0.5rem;
+  grid-area: logo; }
+
+.logo {
+  height: 6.188rem;
+  width: 7.813rem;
+  animation-name: moverlogo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  grid-area: logo;
+  border-radius: 15%; }
+
+@keyframes moverlogo {
+  0% {
+    transform: translateX(-10px); }
+  10% {
+    transform: translateX(120px); }
+  20% {
+    transform: translateX(240px); }
+  30% {
+    transform: translateX(360px); }
+  40% {
+    transform: translateX(480px); }
+  50% {
+    transform: translateX(600px);
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+  60% {
+    transform: translateX(720px); }
+  70% {
+    transform: translateX(840px); }
+  80% {
+    transform: translateX(960px); }
+  90% {
+    transform: translateX(1080px); }
+  100% {
+    transform: translateX(2500px); } }
+
+.navegacion {
+  grid-area: menu;
+  background-color: #f7d40f; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.menu {
+  text-align: center; }
+  .menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 550;
+    padding: 0.938rem; }
+    .menu li a {
+      color: black; }
+
+.submenu {
+  display: none;
+  position: absolute; }
+  .submenu li {
+    display: block;
+    background-color: #f7d40f; }
+
+.menu li:hover ul {
+  display: block; }
+
+p {
+  font-size: medium;
+  color: white; }
+
+h4 {
+  color: #f7d40f;
+  background-color: black;
+  margin-top: 0rem;
+  padding: 3rem;
+  text-align: -webkit-center;
+  font-size: smaller; }
+
+/* Main Inicio */
+.contenido {
+  background-color: black;
+  padding: 1rem;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas:
+  "texto-quienes img-quienes"
+  "img-nuetros texto-nuestros" 
+  "img1 img2";*/ }
+
+.article_quienes, .article_nuestros {
+  padding: 1rem; }
+
+.contenedor_img {
+  padding: 4rem; }
+
+.parrafos {
+  margin-top: 30px;
+  position: static !important; }
+
+.texto__nuestros {
+  grid-area: texto-nuestros;
+  color: white;
+  position: static !important; }
+
+.texto__quienes {
+  grid-area: texto-quienes;
+  color: white;
+  position: static !important; }
+
+.img__quienes {
+  grid-area: img-quienes;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important; }
+  .img__quienes:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+.img__nuestros {
+  grid-area: img-nuestros;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important; }
+  .img__nuestros:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+.contenedor__img__quienes, .contenedor__img__nuestros, .contenedor__img__izq, .contenedor__img__der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static !important; }
+
+.img__1 {
+  grid-area: img1;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%; }
+
+.img__2 {
+  grid-area: img2;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%; }
+
+/* MEDIA QUERY MOBILE */
+@media screen and (max-width: 425px) {
+  h1, h2 {
+    text-align: center; }
+  .logo {
+    animation-name: moverlogomobile;
+    animation-duration: 5s; }
+  .contenido {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 0.7fr);
+    grid-template-areas: "texto-quienes" "img-quienes" "texto-nuestros" "img-nuetros" "img1" "img2"; }
+  .img__quienes, .img__nuestros, .img__1, .img__2 {
+    height: 330px;
+    width: 298px; }
+  .img__menu {
+    height: 200px; } }
+
+@keyframes moverlogomobile {
+  0% {
+    transform: translateX(-10px); }
+  10% {
+    transform: translateX(42px); }
+  20% {
+    transform: translateX(84px); }
+  30% {
+    transform: translateX(126px); }
+  40% {
+    transform: translateX(168px); }
+  50% {
+    transform: translateX(210px);
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+  60% {
+    transform: translateX(252px); }
+  70% {
+    transform: translateX(294px); }
+  80% {
+    transform: translateX(336px); }
+  90% {
+    transform: translateX(378px); }
+  100% {
+    transform: translateX(425px); } }
+
+/* Footer */
+#footer {
+  text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "tarjetas . redes . autor ";
+  border: 1px solid #f7d40f; }
+  #footer a {
+    color: #f7d40f; }
+
+.redes__sociales {
+  width: 235px;
+  height: 100%;
+  grid-area: redes;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.tarjetas__credito {
+  grid-area: tarjetas;
+  display: flex;
+  justify-content: space-evenly; }
+  .tarjetas__credito img {
+    width: 43px;
+    height: 27px; }

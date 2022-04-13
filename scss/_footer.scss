@@ -1,0 +1,35 @@
+/* Footer */
+
+#footer {
+  text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "tarjetas . redes . autor ";
+  border: 1px solid #f7d40f;
+
+  a {
+    color: #f7d40f;
+  }
+}
+
+.redes__sociales {
+  width: 235px;
+  height: 100%;
+  grid-area: redes;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tarjetas__credito {
+  grid-area: tarjetas;
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    width: 43px;
+    height: 27px;
+  }
+}
