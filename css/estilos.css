@@ -166,10 +166,10 @@ form {
 .selector__ciudad {
 	margin-top: 1rem;
 }
-.boton__enviar:hover {
+.boton_enviar {
 	background-color: #50e62e;
 }
-.boton_limpiar:hover {
+.boton_limpiar {
 	background-color: red;
 }
 

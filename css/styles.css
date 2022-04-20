@@ -174,6 +174,147 @@ h4 {
   width: 400px;
   border-radius: 15%; }
 
+/* Main Carta */
+.h3--entradas {
+  color: red; }
+
+.h3--gohan {
+  color: green; }
+
+.h3--combos {
+  color: purple; }
+
+.h3--rolls {
+  color: yellow; }
+
+h3 {
+  text-align: center;
+  text-decoration: underline; }
+
+.container-fluid {
+  background-color: black; }
+
+.card {
+  padding: 1.5rem;
+  position: static !important; }
+
+.contenedor__img__menu {
+  text-align: center;
+  background-color: black; }
+
+.img__menu {
+  width: 200px;
+  height: 220px;
+  background-color: black; }
+
+.contenido__carta {
+  margin: 0%;
+  padding: 0rem;
+  background-color: black; }
+
+.card-group {
+  color: #f7d40f;
+  text-align: center; }
+
+.entradas__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+h5 {
+  color: #f7d40f !important; }
+
+.btn__btn__langostinos {
+  color: #f7d40f; }
+
+.gohan__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.gohan__menu__salmon {
+  width: 220px; }
+
+.combos__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.combinados__menu__salmon {
+  width: 220px; }
+
+.rolls__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.rolls__menu__rolls {
+  width: 220px; }
+
+.card-info {
+  margin-bottom: 1rem; }
+
+/* chequear tamanos de img */
+.card img {
+  height: 10rem;
+  width: 10rem; }
+
+.glyphicon {
+  position: static !important; }
+
+/* CONTACTO */
+form {
+  padding: 2rem;
+  background-color: #E7E7E7;
+  margin: 0 auto;
+  text-align: -webkit-center; }
+
+.datos {
+  margin: 1%;
+  padding: 1.5rem;
+  text-align: -webkit-match-parent;
+  border-block-color: revert;
+  background-color: #f7d40f;
+  color: slategrey; }
+
+.saludo__contacto {
+  padding: 2rem;
+  text-align: center;
+  color: white; }
+
+.botones__formulario, .boton_enviar, .boton_limpiar {
+  margin-top: 1rem; }
+
+.opciones__situacion {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-between; }
+
+.selector__ciudad {
+  margin-top: 1rem; }
+
+.boton_enviar {
+  background-color: #50e62e; }
+
+.boton_limpiar {
+  background-color: red; }
+
+/* Main tienda */
+.btn__pedidos {
+  background-color: black !important;
+  border-color: #f7d40f !important; }
+
+.nuestras__sucursales {
+  color: white; }
+
+.card-title .sucursal {
+  color: #f7d40f !important; }
+
+.sucursal__row {
+  display: flex;
+  justify-content: center; }
+
 /* MEDIA QUERY MOBILE */
 @media screen and (max-width: 425px) {
   h1, h2 {

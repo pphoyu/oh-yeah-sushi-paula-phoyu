@@ -2,15 +2,15 @@
 
 #footer {
   text-align: center;
-  background-color: black;
+  background-color: $colorPrimario;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "tarjetas . redes . autor ";
-  border: 1px solid #f7d40f;
+  border: 1px solid $colorSecundario;
 
   a {
-    color: #f7d40f;
+    color: $colorSecundario
   }
 }
 
@@ -33,3 +33,4 @@
     height: 27px;
   }
 }
+

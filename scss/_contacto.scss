@@ -1,0 +1,48 @@
+/* CONTACTO */
+
+form {
+    padding: 2rem;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+    text-align: -webkit-center;
+  }
+  
+  .datos {
+    margin: 1%;
+    padding: 1.5rem;
+    text-align: -webkit-match-parent;
+    border-block-color: revert;
+    background-color: #f7d40f;
+    color: slategrey;
+  }
+  
+  .saludo__contacto {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .botones__formulario {
+    margin-top: 1rem;
+  }
+  
+  .opciones__situacion {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+  
+  .selector__ciudad {
+    margin-top: 1rem;
+  }
+  
+  .boton_enviar {
+    @extend .botones__formulario;
+    background-color: #50e62e;
+  }
+  
+  .boton_limpiar {
+    @extend .botones__formulario;
+    background-color: red;
+  }
