@@ -150,12 +150,13 @@ form {
 	color: slategrey;
 }
 .saludo__contacto {
-	padding: 2rem;
+	padding: 7rem;
 	text-align: center;
 	color: white;
+	border-bottom: 1px solid #f7d40f;
 }
 .botones__formulario {
-	margin-top: 1rem;
+	margin-top: 7rem;
 }
 .opciones__situacion {
 	display: flex;
@@ -167,10 +168,12 @@ form {
 	margin-top: 1rem;
 }
 .boton_enviar {
-	background-color: #50e62e;
+	color:black;
+    background-color: #f7d40f;
 }
 .boton_limpiar {
-	background-color: red;
+	color:black;
+    background-color: #f7d40f;
 }
 
 /* Main Inicio */
@@ -276,6 +279,7 @@ form {
 
 .container-fluid{
 	background-color: black;
+		
 }
 .card {
 	padding: 1.5rem;
@@ -343,8 +347,8 @@ h5 {
 
 /* chequear tamanos de img */
 .card img {
-	height: 10rem;
-	width: 10rem;
+	height: 140px;
+    width: 160px;
 }
 
 .glyphicon {
@@ -352,16 +356,108 @@ h5 {
 }
 
 /* Main servicios */
+.container-eventos{
+	background-color: black;
+	position: relative !important;
+}
 .carousel{
 	text-align: -webkit-center;
+	position: static !important;
 }
 .carousel__slide {
-	width: 35rem;
+	width: 50rem;
+	height: 40vh;
 }
 .titulo__carousel__servicios {
 	color: white !important;
 	text-align: center;
 }
+.contenido {
+	background-color: black;
+	padding: 1rem;
+}
+
+.article_objetivos{
+	padding: 4rem;
+}
+.article_propuesta{
+	padding: 4rem;
+}
+.contenedor_img{
+	padding: 4rem;
+}
+.article_experiencia{
+	padding: 4rem;
+}
+.parrafos {
+	margin-top: 30px;
+	position: static !important;
+}
+.texto__propuesta {
+	grid-area: texto-nuestros;
+	color: white;
+	position: static !important;
+}
+.texto__objetivos {
+	grid-area: texto-quienes;
+	color: white;
+	position: static !important;
+}
+.texto__experiencia {
+	grid-area: texto-quienes;
+	color: white;
+	position: static !important;
+}
+.img__objetivos {
+	grid-area: img-quienes;
+	height: 330px;
+	width: 298px;
+	transition: 0.5s;
+	object-fit:cover;
+}
+.img__objetivos:hover {
+	transform: scale(1.2);
+}
+.img__propuesta {
+	grid-area: img-nuestros;
+	height: 330px;
+	width: 298px;
+	transition: 0.5s;
+	object-fit:cover;
+	
+}
+.img__propuesta:hover {
+	transform: scale(1.2);
+}
+.img__experiencia {
+	grid-area: img-nuestros;
+	height: 330px;
+	width: 298px;
+	transition: 0.5s;
+	object-fit:cover;
+}
+.img__experiencia:hover {
+	transform: scale(1.2);
+}
+.contenedor__img__objetivos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: static !important;
+}
+.contenedor__img__propuesta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: static !important;
+}
+.contenedor__img__experiencia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: static !important;
+}
+
 /* Main tienda */
 .btn__pedidos {
 	background-color: black !important;
@@ -372,8 +468,14 @@ h5 {
 }
 .card-title .sucursal {
 	color: #f7d40f !important;
-} 
-
+}
+.card img {
+	height: 108px;
+	width: 155px;
+ }
+.img-map {
+	
+}
 /* Footer */
 
 #footer {

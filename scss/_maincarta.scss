@@ -1,10 +1,10 @@
 /* Main Carta */
 
 $titulosCarta: (
-  entradas: red,
-  gohan: green,
-  combos: purple,
-  rolls: yellow
+  entradas: #f7d40f,
+  gohan:#f7d40f,
+  combos: #f7d40f,
+  rolls: #f7d40f
 );
 
 @each $tituloCarta, $color in $titulosCarta {
@@ -21,8 +21,8 @@ $estilos-h3: (
 h3 {
   text-align: map-get($estilos-h3, centro);
   text-decoration: map-get($estilos-h3, subrayado);
+  height: 70px;
 }
-
 .container-fluid {
   background-color: black;
 }
@@ -52,6 +52,12 @@ h3 {
 .card-group {
   color: #f7d40f;
   text-align: center;
+}
+.card-title {
+  font-size: 25px;
+}
+.text-muted{
+  font-size: 20px;
 }
 
 .entradas__menu {

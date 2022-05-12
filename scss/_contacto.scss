@@ -2,7 +2,7 @@
 
 form {
     padding: 2rem;
-    background-color: #E7E7E7;
+    background-color: black;
     margin: 0 auto;
     text-align: -webkit-center;
   }
@@ -17,13 +17,13 @@ form {
   }
   
   .saludo__contacto {
-    padding: 2rem;
+    padding: 7rem;
     text-align: center;
     color: white;
   }
   
   .botones__formulario {
-    margin-top: 1rem;
+    margin-top: 7rem;
   }
   
   .opciones__situacion {
@@ -32,17 +32,21 @@ form {
     margin-top: 1rem;
     justify-content: space-between;
   }
-  
+
   .selector__ciudad {
     margin-top: 1rem;
   }
   
   .boton_enviar {
     @extend .botones__formulario;
-    background-color: #50e62e;
+    color:black;
+    background-color: #f7d40f;;
+    border-color: #f7d40f;
   }
   
   .boton_limpiar {
     @extend .botones__formulario;
-    background-color: red;
+    border-color: #f7d40f;
+    color:black;
+    background-color: #f7d40f;;
   }

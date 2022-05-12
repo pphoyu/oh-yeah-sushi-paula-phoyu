@@ -11,6 +11,15 @@
   
   .card-title .sucursal {
     color: #f7d40f !important;
+    font-size: 30px;
+  }
+  .card img {
+    height: 108px;
+    width: 155px;
+  }
+  .img-map {
+    width: 358px;
+    height: 300px;
   }
 
   @mixin flexbox($flex, $justify) {
@@ -19,5 +28,5 @@
   }
 
   .sucursal__row {
-    @include flexbox(flex, center)
+    @include flexbox(flex, space-around)
   }
