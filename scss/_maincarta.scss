@@ -1,0 +1,126 @@
+/* Main Carta */
+
+$titulosCarta: (
+  entradas: #f7d40f,
+  gohan:#f7d40f,
+  combos: #f7d40f,
+  rolls: #f7d40f
+);
+
+@each $tituloCarta, $color in $titulosCarta {
+  .h3--#{$tituloCarta} {
+    color: $color;
+  }
+}
+
+$estilos-h3: (
+  centro: center,
+  subrayado: underline
+);
+
+h3 {
+  text-align: map-get($estilos-h3, centro);
+  text-decoration: map-get($estilos-h3, subrayado);
+  height: 70px;
+}
+.container-fluid {
+  background-color: black;
+}
+
+.card {
+  padding: 1.5rem;
+  position: static !important;
+}
+
+.contenedor__img__menu {
+  text-align: center;
+  background-color: black;
+}
+
+.img__menu {
+  width: 200px;
+  height: 220px;
+  background-color: black;
+}
+
+.contenido__carta {
+  margin: 0%;
+  padding: 0rem;
+  background-color: black;
+}
+
+.card-group {
+  color: #f7d40f;
+  text-align: center;
+}
+.card-title {
+  font-size: 25px;
+}
+.text-muted{
+  font-size: 20px;
+}
+
+.entradas__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black;
+}
+
+h5 {
+  color: #f7d40f !important;
+}
+
+.btn__btn__langostinos {
+  color: #f7d40f;
+}
+
+.gohan__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black;
+}
+
+.gohan__menu__salmon {
+  width: 220px;
+}
+
+.combos__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black;
+}
+
+.combinados__menu__salmon {
+  width: 220px;
+}
+
+.rolls__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black;
+}
+
+.rolls__menu__rolls {
+  width: 220px;
+}
+
+/* .contenido__carta h3 {
+  text-align: center;
+} */
+
+.card-info {
+  margin-bottom: 1rem;
+}
+
+/* chequear tamanos de img */
+
+.card img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.glyphicon {
+  position: static !important;
+}
+
+

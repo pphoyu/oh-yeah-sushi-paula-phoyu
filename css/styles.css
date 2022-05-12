@@ -1,0 +1,414 @@
+/* Header */
+.header {
+  position: sticky;
+  top: 0rem;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tienda tienda tienda" "logo logo logo" "menu menu menu"; }
+
+.contenedor__sticky {
+  grid-area: tienda;
+  background-color: black;
+  color: #f7d40f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor__logo {
+  background-color: #f7d40f;
+  padding: 0.5rem;
+  grid-area: logo; }
+
+.logo {
+  height: 6.188rem;
+  width: 7.813rem;
+  animation-name: moverlogo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  grid-area: logo;
+  border-radius: 15%; }
+
+@keyframes moverlogo {
+  0% {
+    transform: translateX(-10px); }
+  10% {
+    transform: translateX(120px); }
+  20% {
+    transform: translateX(240px); }
+  30% {
+    transform: translateX(360px); }
+  40% {
+    transform: translateX(480px); }
+  50% {
+    transform: translateX(600px);
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+  60% {
+    transform: translateX(720px); }
+  70% {
+    transform: translateX(840px); }
+  80% {
+    transform: translateX(960px); }
+  90% {
+    transform: translateX(1080px); }
+  100% {
+    transform: translateX(2500px); } }
+
+.navegacion {
+  grid-area: menu;
+  background-color: #f7d40f; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.menu {
+  text-align: center; }
+  .menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 550;
+    padding: 0.938rem; }
+    .menu li a {
+      color: black; }
+
+.submenu {
+  display: none;
+  position: absolute; }
+  .submenu li {
+    display: block;
+    background-color: #f7d40f; }
+
+.menu li:hover ul {
+  display: block; }
+
+p {
+  font-size: medium;
+  color: white; }
+
+h4 {
+  color: #f7d40f;
+  background-color: black;
+  margin-top: 0rem;
+  padding: 3rem;
+  text-align: -webkit-center;
+  font-size: smaller; }
+
+/* Main Inicio */
+.contenido {
+  background-color: black;
+  padding: 1rem; }
+
+.article_quienes, .article_nuestros {
+  padding: 1rem; }
+
+.contenedor_img {
+  padding: 4rem; }
+
+.parrafos {
+  margin-top: 30px;
+  position: static !important; }
+
+.texto__nuestros {
+  grid-area: texto-nuestros;
+  color: white;
+  position: static !important; }
+
+.texto__quienes {
+  grid-area: texto-quienes;
+  color: white;
+  position: static !important; }
+
+.img__quienes {
+  grid-area: img-quienes;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important; }
+  .img__quienes:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+.img__nuestros {
+  grid-area: img-nuestros;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important; }
+  .img__nuestros:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+.contenedor__img__quienes, .contenedor__img__nuestros, .contenedor__img__izq, .contenedor__img__der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static !important; }
+
+.img__1 {
+  grid-area: img1;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%; }
+  .img__1:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+.img__2 {
+  grid-area: img2;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%; }
+  .img__2:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+
+/* Main Carta */
+.h3--entradas {
+  color: #f7d40f; }
+
+.h3--gohan {
+  color: #f7d40f; }
+
+.h3--combos {
+  color: #f7d40f; }
+
+.h3--rolls {
+  color: #f7d40f; }
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  height: 70px; }
+
+.container-fluid {
+  background-color: black; }
+
+.card {
+  padding: 1.5rem;
+  position: static !important; }
+
+.contenedor__img__menu {
+  text-align: center;
+  background-color: black; }
+
+.img__menu {
+  width: 200px;
+  height: 220px;
+  background-color: black; }
+
+.contenido__carta {
+  margin: 0%;
+  padding: 0rem;
+  background-color: black; }
+
+.card-group {
+  color: #f7d40f;
+  text-align: center; }
+
+.card-title {
+  font-size: 25px; }
+
+.text-muted {
+  font-size: 20px; }
+
+.entradas__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+h5 {
+  color: #f7d40f !important; }
+
+.btn__btn__langostinos {
+  color: #f7d40f; }
+
+.gohan__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.gohan__menu__salmon {
+  width: 220px; }
+
+.combos__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.combinados__menu__salmon {
+  width: 220px; }
+
+.rolls__menu {
+  border-bottom: 1px solid #f7d40f;
+  color: #f7d40f;
+  background-color: black; }
+
+.rolls__menu__rolls {
+  width: 220px; }
+
+/* .contenido__carta h3 {
+  text-align: center;
+} */
+.card-info {
+  margin-bottom: 1rem; }
+
+/* chequear tamanos de img */
+.card img {
+  height: 10rem;
+  width: 10rem; }
+
+.glyphicon {
+  position: static !important; }
+
+/* CONTACTO */
+form {
+  padding: 2rem;
+  background-color: black;
+  margin: 0 auto;
+  text-align: -webkit-center; }
+
+.datos {
+  margin: 1%;
+  padding: 1.5rem;
+  text-align: -webkit-match-parent;
+  border-block-color: revert;
+  background-color: #f7d40f !important;
+  color: slategrey; }
+
+.saludo__contacto {
+  padding: 7rem;
+  text-align: center;
+  color: white; }
+
+.botones__formulario, .boton_enviar, .boton_limpiar {
+  margin-top: 7rem; }
+
+.opciones__situacion {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-between; }
+
+.selector__ciudad {
+  margin-top: 1rem; }
+
+.boton_enviar {
+  color: black;
+  background-color: #f7d40f;
+  border-color: #f7d40f; }
+
+.boton_limpiar {
+  border-color: #f7d40f;
+  color: black;
+  background-color: #f7d40f; }
+
+/* Main tienda */
+.btn__pedidos {
+  background-color: black !important;
+  border-color: #f7d40f !important; }
+
+.nuestras__sucursales {
+  color: white; }
+
+.card-title .sucursal {
+  color: #f7d40f !important;
+  font-size: 30px; }
+
+.card img {
+  height: 108px;
+  width: 155px; }
+
+.img-map {
+  width: 358px;
+  height: 300px; }
+
+.sucursal__row {
+  display: flex;
+  justify-content: space-around; }
+
+/* MEDIA QUERY MOBILE */
+@media screen and (max-width: 425px) {
+  h1, h2 {
+    text-align: center; }
+  .logo {
+    animation-name: moverlogomobile;
+    animation-duration: 5s; }
+  .contenido {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 0.7fr);
+    grid-template-areas: "texto-quienes" "img-quienes" "texto-nuestros" "img-nuetros" "img1" "img2"; }
+  .img__quienes, .img__nuestros, .img__1, .img__2 {
+    height: 330px;
+    width: 298px; }
+  .img__menu {
+    height: 200px; } }
+
+@keyframes moverlogomobile {
+  0% {
+    transform: translateX(-10px); }
+  10% {
+    transform: translateX(42px); }
+  20% {
+    transform: translateX(84px); }
+  30% {
+    transform: translateX(126px); }
+  40% {
+    transform: translateX(168px); }
+  50% {
+    transform: translateX(210px);
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px #f7d40f;
+    -webkit-box-shadow: 0px 0px 15px 15px #f7d40f; }
+  60% {
+    transform: translateX(252px); }
+  70% {
+    transform: translateX(294px); }
+  80% {
+    transform: translateX(336px); }
+  90% {
+    transform: translateX(378px); }
+  100% {
+    transform: translateX(425px); } }
+
+/* Footer */
+#footer {
+  text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "tarjetas . redes . autor ";
+  border: 1px solid #f7d40f; }
+  #footer a {
+    color: #f7d40f; }
+
+.redes__sociales {
+  width: 235px;
+  height: 100%;
+  grid-area: redes;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.tarjetas__credito {
+  grid-area: tarjetas;
+  display: flex;
+  justify-content: space-evenly; }
+  .tarjetas__credito img {
+    width: 43px;
+    height: 27px; }

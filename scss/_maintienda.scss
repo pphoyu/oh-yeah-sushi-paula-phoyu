@@ -1,0 +1,32 @@
+/* Main tienda */
+
+.btn__pedidos {
+    background-color: black !important;
+    border-color: #f7d40f !important;
+  }
+  
+  .nuestras__sucursales {
+    color: white;
+  }
+  
+  .card-title .sucursal {
+    color: #f7d40f !important;
+    font-size: 30px;
+  }
+  .card img {
+    height: 108px;
+    width: 155px;
+  }
+  .img-map {
+    width: 358px;
+    height: 300px;
+  }
+
+  @mixin flexbox($flex, $justify) {
+    display: $flex;
+    justify-content: $justify
+  }
+
+  .sucursal__row {
+    @include flexbox(flex, space-around)
+  }

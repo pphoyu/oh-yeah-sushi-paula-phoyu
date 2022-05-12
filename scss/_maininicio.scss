@@ -1,0 +1,94 @@
+/* Main Inicio */
+
+.contenido {
+  background-color: $colorPrimario;
+  padding: 1rem; 
+}
+
+.article_quienes, .article_nuestros {
+  padding: 1rem;
+}
+
+.contenedor_img {
+  padding: 4rem;
+}
+
+.parrafos {
+  margin-top: 30px;
+  position: static !important;
+}
+
+.texto__nuestros {
+  grid-area: texto-nuestros;
+  color: white;
+  position: static !important;
+}
+
+.texto__quienes {
+  grid-area: texto-quienes;
+  color: white;
+  position: static !important;
+}
+
+.img__quienes {
+  grid-area: img-quienes;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important;
+
+  &:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px $colorSecundario;
+    -webkit-box-shadow: 0px 0px 15px 15px $colorSecundario;
+  }
+}
+
+.img__nuestros {
+  grid-area: img-nuestros;
+  height: 330px;
+  width: 298px;
+  border-radius: 15%;
+  position: static !important;
+
+  &:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px $colorSecundario;
+    -webkit-box-shadow: 0px 0px 15px 15px $colorSecundario;
+  }
+}
+
+.contenedor__img__quienes, .contenedor__img__nuestros, .contenedor__img__izq, .contenedor__img__der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static !important;
+}
+
+.img__1 {
+  grid-area: img1;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%;
+  &:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px $colorSecundario;
+    -webkit-box-shadow: 0px 0px 15px 15px $colorSecundario;
+  }
+}
+
+.img__2 {
+  grid-area: img2;
+  height: 400px;
+  width: 400px;
+  border-radius: 15%;
+  &:hover {
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 15px $colorSecundario;
+    -webkit-box-shadow: 0px 0px 15px 15px $colorSecundario;
+  }
+}
